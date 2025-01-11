@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500;&display=swap');
+
+:root {
+    --lg-font: 'kaisei Tokumin', serif;
+    --sm-font: 'poppins', sans-serif;
+    --green: #2c9e49;
+    --blue: #0000FF; /* إضافة اللون الأزرق */
+}
+
+body {
+    font-family: var(--sm-font);
+    direction: rtl; /* يجعل اتجاه الصفحة من اليمين إلى اليسار */
+    text-align: right; /* يضمن محاذاة النصوص إلى اليمين */
+}
+
+/* button */
+.bg-primary {
+    background-color: var(--blue)!important; /* تغيير اللون الأزرق */
+}
+
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--blue);
+}
+
+/* text color */
+.text-primary {
+    color: var(--blue)!important;
+}
+
+/* navbar */
+.navbar {
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+    color: var(--pink)!important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* header */
+#header {
+    background-image: url('../images/480_F_415321493_4UXIA14E4djwm5Nq8P48SguNgSZVfHIa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* carousel */
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+    text-align: right; /* يضمن محاذاة النصوص إلى اليمين */
+}
+
+.carousel-item .btn {
+    border-color: #fff !important;
+}
+
+.carousel-item .btn:hover {
+    border-color: var(--pink) !important;
+}
+
+/* title */
+.tittle h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    right: -20px;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+/* collection */
+.active-filter-btn {
+    background-color: var(--green)!important;
+    color: #fff !important;
+    border-color: var(--green)!important;
+}
+
+.filter-button-group .btn:hover {
+    color: #fff !important;
+}
+
+.collection-img span {
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+/* special */
+.special-img span {
+    top: 20px;
+    right: 20px;
+}
+
+.special-list .btn {
+    padding: 8px 20px !important;
+}
+
+.special-img {
+    transition: all 0.3s ease;
+}
+
+.special-img:hover img {
+    transform: scale(1.2);
+}
+
+/* offers */
+#offers {
+    background: url(../images/المعدات_الزراعية_الحديثة.jpg) center/cover no-repeat;
+    text-align: right;
+}
+
+#offers .row {
+    min-width: 60vh;
+}
+
+.offers-content span {
+    font-size: 28px;
+}
+
+.offers-content h2 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.offers-content .btn {
+    border-color: transparent!important;
+}
+
+/* تعديل لون الفوتر */
+footer {
+    background-color: #000; /* الخلفية السوداء */
+    color: #fff; /* النص الأبيض */
+    padding: 30px;
+    text-align: center;
+    font-family: var(--lg-font);
+    border: 5px solid var(--blue); /* إطار باللون الأزرق */
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); /* إضافة ظل أزرق */
+    margin: 40px auto;
+    max-width: 90%;
+}
+
+/* تخصيص الحقول والروابط */
+footer a {
+    color: #fff; /* الروابط بيضاء */
+    text-decoration: none; /* إزالة التسطير */
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--blue); /* تغيير اللون إلى الأزرق عند التمرير */
+}
+
+/* تخصيص الأيقونات في الفوتر */
+.social-icon {
+    font-size: 2rem;
+    color: white; /* اللون الأبيض للأيقونات */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--blue); /* تغيير اللون إلى الأزرق عند التمرير */
+}
+
+footer .social-media a {
+    text-decoration: none; /* إزالة التسطير من الروابط */
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px; /* تقليل المساحة الداخلية على الشاشات الصغيرة */
+        border-width: 3px; /* تقليل عرض الإطار */
+    }
+    footer .brand {
+        font-size: 1.2rem; /* تقليل حجم النص في الشاشات الصغيرة */
+    }
+    footer p {
+        font-size: 1rem; /* تقليل حجم النص العادي */
+    }
+}
+
+/* media queries */
+@media (min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
+
+/* تخصيص الأيقونات في الفوتر */
+.icons-container {
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-container .icons {
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+.icons-container .icons img {
+    height: 5rem;
+    margin-left: 2rem; /* تعديل للتوافق مع النصوص من اليمين إلى اليسار */
+}
+
+.icons-container .icons h3 {
+    color: #333;
+    padding-bottom: 0.5rem;
+    text-align: right;
+}
+
+.card-img-top {
+    top: 20px;
+    right: 20px;
+    width: 100%;
+}
